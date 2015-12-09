@@ -44,6 +44,6 @@ a,a:visited,a:active{text-decoration: none;}
 .icontainer4{text-align: center;}
 .icontainer4_body{width:950px; margin:0 auto;}
 .icontainer4_body p{text-indent: 2em;color:#757575;line-height:30px ;font-family: "Microsoft YaHei";}
-.footer{background: url("../images/bottom_bg.gif") ;height:40px; width:100%;text-align: center;color:#666;padding-top: 5px;}
+.footer{background: #8bb03c;height:40px; width:100%;text-align: center;color:#666;padding-top: 5px;color:#fefb9f;}
 .back2top{display: none;width:36px;height:36px;position: fixed;right:50px;bottom: 50px;background-color: #435275;border-radius: 5px;}
 .back2top a{display: block;width:36px;height: 36px;color:#435275;background: url("../images/returnTopIco.png") no-repeat 11px 10px;}
