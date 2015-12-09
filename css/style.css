@@ -9,13 +9,13 @@ a,a:visited,a:active{text-decoration: none;}
 .lang ul li a:hover{text-decoration: underline;}
 .header_nav{width:950px;height:122px;margin:0 auto;overflow: hidden;}
 .logo{float:left;margin:auto;}
-.flow_header{position: fixed;top:0;display: none;height:80px;width:100%;background-color: #fff;z-index: 999;}
+.flow_header{position: fixed;top:0;display: none;height:100px;width:100%;background-color: #fff;z-index: 999;}
 .nav_wrapper{width:950px;margin: 10px auto;}
 .nav{overflow: hidden;height:81px;}
-.nav ul{float:right;height: 81px;line-height: 81px;}
-.nav ul li{display: inline;margin:0 10px;}
-.nav ul li a{display: inline-block;font-family: "Microsoft YaHei";color:#5d6e80;}
-.nav ul li a:hover{color:#3c882e;}
+.nav ul{float:right;height: 40px;line-height: 40px;overflow: hidden;margin: 20px auto;}
+.nav ul li{float:left; margin:0 10px;width:75px;text-align: center;}
+.nav ul li a{font-family: "Microsoft YaHei";color:#5d6e80;font-size: 18px;}
+.nav ul li a:hover{color:#3c882e;text-shadow: 0 0 3px #3c882e;}
 .container1{background: url("../images/container1.jpg") center center no-repeat;height:850px;overflow: hidden;width:100%;}
 .container1_text{width:950px;margin:320px auto 125px;text-align: center;}
 .container1_text h1{font-size: 80px;color:#fff;}
