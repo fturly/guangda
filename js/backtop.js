@@ -12,13 +12,18 @@ $(function () {
         }
         (winscr > 100)?$(".back2top").fadeIn(800):$(".back2top").fadeOut(800);
         if ((winscr + 500) > _off){
-            $(".icontainer3_1").animate({top:1626, opacity:"1"}, 800);
-            $(".icontainer3_2").animate({top:1626, opacity:"1"}, 800);
-            $(".icontainer3_3").animate({top:1626, opacity:"1"}, 800);
-            $(".icontainer3_4").animate({top:1626, opacity:"1"}, 800);
+            $(".icontainer3_1").delay(100).animate({top:1626, opacity:"1"}, 800,function(){
+                $(".icontainer3_2").delay(100).animate({top:1626, opacity:"1"}, 800, function(){
+                    $(".icontainer3_3").delay(100).animate({top:1626, opacity:"1"}, 800, function(){
+                        $(".icontainer3_4").delay(100).animate({top:1626, opacity:"1"}, 800, function(){
+                            console.log("Finished");
+                        });
+                    });
+                });
+            });
         }
-    })
+    });
     $(".back2top").click(function(){
         $('body,html').animate({scrollTop:0},1500);
     })
-})
+});
