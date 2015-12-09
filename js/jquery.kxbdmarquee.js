@@ -30,6 +30,8 @@
 			var scrollH=$marquee.height();		//滚动元素容器的高度
 			var $element=$marquee.children();	//滚动元素
 			var $kids=$element.children();		//滚动子元素
+			var $kids_length=$kids.length;
+            var test=$kids.outerWidth();
 			var scrollSize=0;					//滚动元素尺寸
 
 			//滚动类型，1左右，0上下
@@ -41,15 +43,17 @@
 			//获取滚动元素的尺寸
 			if(opts.isEqual){
 				scrollSize=$kids[_type?"outerWidth":"outerHeight"]()*$kids.length;
+                console.log(scrollSize)
 			}else{
 				$kids.each(function(){
 					scrollSize+=$(this)[_type?"outerWidth":"outerHeight"]();
 				});
 			}
 			//滚动元素总尺寸小于容器尺寸，不滚动
-			//if(scrollSize<(_type?scrollW:scrollH)){return;};
-
-			//克隆滚动子元素将其插入到滚动元素后，并设定滚动元素宽度
+            if (scrollSize < (_type ? scrollW : scrollH)) {
+                return;
+            }
+            //克隆滚动子元素将其插入到滚动元素后，并设定滚动元素宽度
 			$element.append($kids.clone()).css(_type?"width":"height",scrollSize*2);
 
 			var numMoved=0;
